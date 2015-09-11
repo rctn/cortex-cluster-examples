@@ -29,19 +29,13 @@ git clone git://github.com/Theano/Theano.git
 cd Theano
 python setup.py develop
 
-(3) Create your settings:
-
-(a) Create the file (the ~ makes it in your home directory, don't forget the '.')
+(3) Look at your settings file:
+Move the .theanorc file in this folder to:
 ~/.theanorc
+Eg.
+mv <current .theanorc path> ~/.theanorc
 
-(b) Put the following text in your .theanorc file
 
-[global]
-floatX = float32
-device = gpu
-
-[nvcc]
-fastmath = True
 
 (4) Look at the script example.py to see how to use theano for 
 matrix multiplication.
