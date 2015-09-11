@@ -1,0 +1,9 @@
+[global]
+root = /global/software/sl-6.x86_64/modules/langs/cuda/6.5/
+device = gpu
+floatX = float32
+force_device=True
+ldflags = -lmkl_rt
+
+[nvcc]
+fastmath = True
